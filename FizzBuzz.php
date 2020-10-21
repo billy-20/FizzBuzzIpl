@@ -11,7 +11,7 @@ class FizzBuzz
     {
         if($int === 3) return "Fizz";
 
-        return (string )$int ;
+        return strval($int) ;
 
 
     }

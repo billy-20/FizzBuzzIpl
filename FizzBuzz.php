@@ -12,6 +12,8 @@ class FizzBuzz
 
         if($int === 2) return "2";
 
+        if($int === 3) return "Fizz";
+
         return "1";
 
 

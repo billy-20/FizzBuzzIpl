@@ -9,7 +9,7 @@ class FizzBuzzTest extends TestCase
 {
     private $fizzbuzz;
 
-     protected function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
         $this->fizzBuzz= new FizzBuzz();
@@ -37,7 +37,15 @@ class FizzBuzzTest extends TestCase
         //assert
         $this->assertEquals("2" , $actual);
     }
+    public function test_count_given3_shouldReturnFizz(){
+        // Arrange
 
+        //Act
+        $actual = $this->fizzBuzz->count(3);
+
+        //assert
+        $this->assertEquals("Fizz" , $actual);
+    }
 
     //  $this->assertEquals(true,true); // verifier que 2 valeurs sont egales  (true est bien egal a true )
 

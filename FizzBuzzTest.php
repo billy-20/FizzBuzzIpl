@@ -55,6 +55,15 @@ class FizzBuzzTest extends TestCase
         //assert
         $this->assertEquals("4" , $actual);
     }
+    public function test_count_given4_shouldReturnBuzz(){
+        // Arrange
+
+        //Act
+        $actual = $this->fizzBuzz->count(5);
+
+        //assert
+        $this->assertEquals("Buzz" , $actual);
+    }
 
     //  $this->assertEquals(true,true); // verifier que 2 valeurs sont egales  (true est bien egal a true )
 

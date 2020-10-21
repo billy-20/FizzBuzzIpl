@@ -60,7 +60,7 @@ class FizzBuzzTest extends TestCase
         //assert
         $this->assertEquals("4" , $actual);
     }
-    public function test_count_given4_shouldReturnBuzz(){
+    public function test_count_given5_shouldReturnBuzz(){
         // Arrange
 
         //Act
@@ -69,6 +69,20 @@ class FizzBuzzTest extends TestCase
         //assert
         $this->assertEquals("Buzz" , $actual);
     }
+    public function test_count_given6_shouldReturnFizz(){
+        // Arrange
+
+        //Act
+        $actual = $this->actCount(6);
+
+        //assert
+        $this->assertEquals("Fizz" , $actual);
+    }
+
+
+
+
+
     private function actCount(int $int):string
     {
         return $this->fizzBuzz->count($int);

@@ -9,6 +9,11 @@ class FizzBuzzTest extends TestCase
 {
     private $fizzbuzz;
 
+    /**
+     * @return mixed
+     */
+
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -20,7 +25,7 @@ class FizzBuzzTest extends TestCase
         // Arrange (on prepare tous ce dont on a besoin pour le test, càd les variables etc..)
 
         //Act (execute la fonction que l'on souhaite tester)
-        $actual = $this->fizzBuzz->count(1);
+        $actual = $this->actCount(1);
 
         //Assert
         $this->assertEquals("1", $actual);
@@ -32,7 +37,7 @@ class FizzBuzzTest extends TestCase
         // Arrange
 
         //Act
-        $actual = $this->fizzBuzz->count(2);
+        $actual = $this->actCount(2);
 
         //assert
         $this->assertEquals("2" , $actual);
@@ -41,7 +46,7 @@ class FizzBuzzTest extends TestCase
         // Arrange
 
         //Act
-        $actual = $this->fizzBuzz->count(3);
+        $actual = $this->actCount(3);
 
         //assert
         $this->assertEquals("Fizz" , $actual);
@@ -50,7 +55,7 @@ class FizzBuzzTest extends TestCase
         // Arrange
 
         //Act
-        $actual = $this->fizzBuzz->count(4);
+        $actual = $this->actCount(4);
 
         //assert
         $this->assertEquals("4" , $actual);
@@ -59,12 +64,15 @@ class FizzBuzzTest extends TestCase
         // Arrange
 
         //Act
-        $actual = $this->fizzBuzz->count(5);
+        $actual = $this->actCount(5);
 
         //assert
         $this->assertEquals("Buzz" , $actual);
     }
-
+    private function actCount(int $int):string
+    {
+        return $this->fizzBuzz->count($int);
+    }
     //  $this->assertEquals(true,true); // verifier que 2 valeurs sont egales  (true est bien egal a true )
 
 

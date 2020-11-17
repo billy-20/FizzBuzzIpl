@@ -30,7 +30,7 @@ class FizzBuzzTest extends TestCase
         //Assert
         $this->assertEquals("1", $actual);
 
-        // $this->assertTrue(true ); // raccourci pour les booleans (au lieu de mettre le assertEquals)
+        // $this->assertTrue(true); // raccourci pour les booleans (au lieu de mettre le assertEquals)
     }
 
     public function test_count_given2_shouldReturn2(){
@@ -78,10 +78,6 @@ class FizzBuzzTest extends TestCase
         //assert
         $this->assertEquals("Fizz" , $actual);
     }
-
-
-
-
 
     private function actCount(int $int):string
     {

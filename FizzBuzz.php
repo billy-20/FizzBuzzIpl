@@ -11,7 +11,6 @@ class FizzBuzz
         if($int === 5) return "Buzz";
         return strval($int) ;
 
-
     }
 
     /**
